@@ -1,0 +1,14 @@
+{
+    "course": [
+        {
+            "id": 1,
+            "name": "angular",
+            "description": "programming"
+        },
+        {
+            "id": 2,
+            "name": "Anna Karenina",
+            "description": "novel"
+        }
+    ]
+}
