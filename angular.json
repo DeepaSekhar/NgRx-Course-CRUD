@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "NgRX-Course-CRUD"
+    }
+  },
+  "defaultProject": "NgRX-Course-CRUD",
+  "cli": {
+    "analytics": false
+  }
 }
