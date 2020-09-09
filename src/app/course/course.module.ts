@@ -8,6 +8,7 @@ import { CourseService } from '../course/services/course.service'
   declarations: [],
   imports: [
     CommonModule
-  ]
+  ],
+  providers: [CourseModule]
 })
 export class CourseModule { }
