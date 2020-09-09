@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators'
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceService {
+export class CourseService {
   courseURL = "http://localhost:3000/course"
   constructor(private http: HttpClient) { }
   //get all the course
