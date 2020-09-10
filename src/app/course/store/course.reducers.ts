@@ -28,7 +28,7 @@ export const courseReducer = createReducer(
     //create 
 
     on(CourseActionTypes.createCourse, (state, action) => {
-        return adapter.addOne(action.courses, state)
+        return adapter.addOne(action.course, state)
     }),
 
     //delete
