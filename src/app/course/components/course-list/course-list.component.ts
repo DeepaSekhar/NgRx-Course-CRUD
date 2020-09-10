@@ -30,4 +30,17 @@ export class CourseListComponent implements OnInit {
   deleteCourse(courseId: string) {
     this.store.dispatch(CourseActionTypes.deleteCourse({ courseId }))
   }
+  updateCourse(updateForm) {
+    const update: Update<Course> = {
+      id: this.courseToBeUpdated.id,
+      changes: {
+        ...this.courseToBeUpdated,
+        ...updateForm.value
+      }
+    }
+    this.store.dispatch(CourseActionTypes.updateCourse({ update }))
+    this.isUpdateActivated = false,
+      this.courseToBeUpdated = null
+  }
+
 }
