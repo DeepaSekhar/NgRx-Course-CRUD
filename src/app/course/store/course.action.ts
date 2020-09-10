@@ -12,7 +12,7 @@ export const coursesLoaded = createAction(
 //create
 export const createCourse = createAction(
     '[Create Course Component ] Create Course',
-    props<{ courses: Course }>()
+    props<{ course: Course }>()
 )
 //delete
 export const deleteCourse = createAction(
