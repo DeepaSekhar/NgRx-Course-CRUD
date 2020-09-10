@@ -8,7 +8,7 @@ export const CourseFeatureSelector = createFeatureSelector<CourseState>('courses
 export const getAllCourses = createSelector(
     CourseFeatureSelector, selectAll
 );
-export const areCourseLoaded = createSelector(
+export const areCoursesLoaded = createSelector(
     CourseFeatureSelector,
     state => state.coursesLoaded
 )
