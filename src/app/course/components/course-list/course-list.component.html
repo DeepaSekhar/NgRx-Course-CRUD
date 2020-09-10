@@ -5,9 +5,9 @@
     <th>Oprations</th>
   </thead>
   <tbody>
-    <tr *ngFor="let course of courses$" |async>
+    <tr *ngFor="let course of courses$ | async">
       <td>{{ course.name }}</td>
-      <td>{{ course.descriprtion }}</td>
+      <td>{{ course.description }}</td>
       <td>
         <button (click)="showUpdateForm(course)">Update</button>
         <button (click)="deleteCourse(course.id)">Delete</button>
